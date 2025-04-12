@@ -11,5 +11,5 @@ terraform-apply:
     terraform apply tfplan
 
 build-lambda:
-	cd terraform && \
-	./build_lambda.sh
+	cd scripts && \
+	./build_stock_price_downloader_lambda.sh

@@ -48,7 +48,7 @@ resource "aws_iam_role_policy" "stock_price_downloader_lambda_s3_policy" {
 
 # Lambda function
 resource "aws_lambda_function" "stock_price_downloader" {
-  filename         = "stock_price_downloader.zip"
+  filename         = "stock_price_downloader_lambda.zip"
   function_name    = "stock_price_downloader"
   role             = aws_iam_role.stock_price_downloader_lambda_role.arn
   handler          = "lambda_function.lambda_handler"

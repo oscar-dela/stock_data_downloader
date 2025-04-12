@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.9"
 yfinance = "^0.2.55"
 pydantic = "^2.11.3"
+boto3 = "^1.37.33"
+aws-lambda-powertools = "^3.10.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
