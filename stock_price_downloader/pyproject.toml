@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "stock-price-downloader"
+version = "0.1.0"
+description = "A Python package for downloading historical stock prices and saving them in JSON format"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+yfinance = "^0.2.55"
+pydantic = "^2.11.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+stock-downloader = "stock_price_downloader.cli:main"
